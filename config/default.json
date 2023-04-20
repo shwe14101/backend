@@ -1,3 +1,2 @@
-{
-    "mongoURI": "mongodb://127.0.0.1:27017/flipkart_lite"
-}
+
+{"mongoURI":"mongodb+srv://shwethasrikanth:VJxu23aZMEtf5aeb@cluster0.w0uvamc.mongodb.net/?retryWrites=true&w=majority"}

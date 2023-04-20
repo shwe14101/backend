@@ -8,7 +8,7 @@ const router = express.Router();
 const Product = require('../../models/products');
 const Cart= require('../../models/cart');
 const Saveforlater = require('../../models/saveforlater');
-const products = require('../../models/products');
+//const products = require('../../models/products');
 
 
 //test routes with our @get api
