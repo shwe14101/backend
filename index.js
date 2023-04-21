@@ -17,16 +17,16 @@ app.use(cors({
     "preflightContinue": false,
     "optionsSuccessStatus": 204
   }));
-app.get('/list',async(req,res)=>{
-    const PAGE_SIZE = 10;
-    const page  = parseInt(req.query.page ||"0");
-   const total = await Product.countDocuments({});
-    const lists = await Product.find({}).limit(PAGE_SIZE).skip(PAGE_SIZE*page);
-  res.send("Testing server");
-  res.json({total, lists});
-  // res.send("Hello");
+// app.get('/list',async(req,res)=>{
+//     const PAGE_SIZE = 10;
+//     const page  = parseInt(req.query.page ||"0");
+//    const total = await Product.countDocuments({});
+//     const lists = await Product.find({}).limit(PAGE_SIZE).skip(PAGE_SIZE*page);
+//   res.send("Testing server");
+//   res.json({total, lists});
+//   // res.send("Hello");
 
-})
+// })
 app.use(router);
 
 
