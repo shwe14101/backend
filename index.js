@@ -22,7 +22,7 @@ app.get('/list',async(req,res)=>{
     const page  = parseInt(req.query.page ||"0");
    const total = await Product.countDocuments({});
     const lists = await Product.find({}).limit(PAGE_SIZE).skip(PAGE_SIZE*page);
-
+  res.send("Testing server");
   res.json({total, lists});
   // res.send("Hello");
 
